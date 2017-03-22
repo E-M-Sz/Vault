@@ -1,0 +1,27 @@
+<nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse">
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <a class="navbar-brand" href="/">MyApp</a>
+
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+    <ul class="navbar-nav mr-auto mt-2 mt-md-0">
+
+      <%# '/' route%>
+      <%if (nav === 'index') { %>
+        <li><a class="nav-item nav-link active" href="/">Index</a></li>
+        <li><a class="nav-item nav-link" href="/route2">Route2</a></li>
+      <% } %>
+
+      <%# '/route2' route%>
+      <%if (nav === 'route2') { %>
+        <li><a class="nav-item nav-link" href="/">Index</a></li>
+        <li><a class="nav-item nav-link active" href="/route2">Route2</a></li>
+      <% } %>
+
+    </ul>
+    <span class="navbar-text">
+      Logged in as <strong>Admin <i class="fa fa-rocket" aria-hidden="true"></i></strong>
+    </span>
+  </div>
+</nav>
